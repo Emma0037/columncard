@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1440px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-color: hsl(0, 0%, 95%);
+    width: 1000px;
+    height: 700px;
+    padding: 70px;
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    line-height: 2;
+    border-radius: 25px;  
+}
+.main{
+    background-color: hsl(31, 77%, 52%);
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;   
+}
+.main1{
+    background-color: hsl(184, 100%, 22%);
+    padding: 20px;   
+}
+.main2{
+    background-color: hsl(179, 100%, 13%);
+    padding: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;   
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+  font-weight: 400px;
+  font-style: normal;
+  margin-top: 30px;
+}
+h1{
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700px;
+  font-style: normal;
+  margin-top: 30px;
+}
+.btn{
+    background-color: hsl(0, 0%, 95%);
+    width: 150px;
+    height: 50px;
+    margin-bottom: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 2px solid hsl(0, 0%, 95%);
+    font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400px;
+  font-style: normal;  
+}
+.main .btn:hover,
+.main1 .btn:hover,
+.main2 .btn:hover{
+    background: transparent;
+    color:hsl(0, 0%, 95%);
+}
+.logo{
+    margin-top: 30px;
+}
+.main .btn{
+    margin-top: 106px;
+    color: hsl(31, 77%, 52%);
+}
+.main1 .btn{
+    margin-top: 80px;
+    color: hsl(184, 100%, 22%);
+}
+.main2 .btn{
+    margin-top: 106px;
+    color: hsl(179, 100%, 13%);
+}
+@media(max-width:375px){
+    body{
+        display: grid;
+        justify-content: center;
+    }
+    .container{
+        display: grid;
+        justify-content: center;
+    }
+    p{
+        width: 300px;
+    }
+    .main{
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 0px;
+    }
+    .main2{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 0px;  
+    }
+}
